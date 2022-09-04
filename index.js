@@ -11,12 +11,9 @@ app.use(express.json());
 app.use('/user', userRouters);
 
 app.get('/', (req, res) => {
-    res.send('ACC Assingment-1');
+    res.send('ACC Assignment-1');
 });
 
-app.all('*', (req, res) => {
-    res.send('No Route Found');
-});
 
 app.listen(port, () => {
     console.log(`ACC assignment listening on port ${port}`);
